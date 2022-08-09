@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 950px;
+    height: 600px;
+    margin: 1.3rem auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffffcc;
+    box-shadow: 0 0 10px #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: .6rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.choose-img-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-img-btn{
+    margin: 1rem;
+    background-color: rgba(78, 78, 255, 0.904);
+    color: white;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-img-btn:hover{
+    background-color: rgb(78, 78, 255);
+}
+
+.choose-img-btn:hover{
+    background-color:rgba(0, 0, 0, 0.89)
+}
+
+.options{
+    border: 1px solid violet;
+    height: 400px;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.filters{
+    border: 1px solid black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+
+}
+
+.filter-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;    
+}
+
+.filter-grid .fil{
+    color: black;
+    border: 1px solid black;
+    padding: .3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.filter-grid .fil::-moz-selection{
+    background-color: rgba(78, 78, 255, 0.904);
+    color: white;
+    border: none;
+}
+
+    
+
+
+.btn-reset button{
+    background-color: rgba(78, 78, 255, 0.904);
+    color: white;
+    border: none;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

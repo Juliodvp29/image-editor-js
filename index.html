@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image editor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Editor</h1>
+        <div class="content">
+            <div class="options">
+                <div class="filters">
+                    <div class="filter-grid">
+                    <div class="fil brightness">Brightness</div>
+                    <div class="fil contrast">Contrast</div>
+                    <div class="fil grayscale">Grayscale</div>
+                    <div class="fil sepia">Sepia</div>                
+                    <input type="range">
+                    </div>
+                </div>
+                <div class="rotates">
+                    <div class="rotate-left">
+                        <img src="./img/undo_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                    <div class="rotate-right">
+                        <img src="./img/redo_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>
+                </div>
+                <div class="btn-reset">
+                    <button>Reset</button>
+                </div>
+            </div>
+            <div class="image-content">
+                <div class="img">
+                    <img src="./img/musica-g7ec9c38e6_1920.jpg" width="400" height="350" alt="">
+                </div>
+                <button class="choose-img-btn">Choose Image</button>
+                <button class="save-img-btn">Save Image</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
