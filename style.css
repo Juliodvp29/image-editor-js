@@ -67,7 +67,6 @@ body{
 }
 
 .options{
-    border: 1px solid violet;
     height: 400px;
     width: 390px;
     display: flex;
@@ -76,12 +75,10 @@ body{
 }
 
 .filters{
-    border: 1px solid black;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding: .5rem;
 
 }
@@ -94,6 +91,7 @@ body{
 }
 
 .filter-grid .fil{
+    width: 100px;
     color: black;
     border: 1px solid black;
     padding: .3rem;
@@ -106,15 +104,53 @@ body{
     -o-border-radius: 5px;
 }
 
-.filter-grid .fil::-moz-selection{
+.options p{
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.rotates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    margin-top: -15px;
+}
+
+.rotates div img{
+    width: 30px;
+    height: 30px;
+}
+
+.rotates div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: .5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.rotates div:hover{
+    background-color: rgba(78, 78, 255, 0.904);
+}
+
+.filter-grid .fil:hover{
     background-color: rgba(78, 78, 255, 0.904);
     color: white;
     border: none;
+} 
+
+.range{
+   width: 300px;
 }
 
     
-
-
 .btn-reset button{
     background-color: rgba(78, 78, 255, 0.904);
     color: white;
@@ -128,3 +164,29 @@ body{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+.btn-reset button:hover{
+    background-color: rgb(78, 78, 255);
+}
+
+/* filters */
+.brightness{
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+}
+
+.contrast{
+    filter: contrast(1.5);
+    -webkit-filter: contrast(1.5);
+}
+
+.grayscale{
+    filter: grayscale(1.5);
+    -webkit-filter: grayscale(1.5);
+}
+
+.sepia{
+    filter: sepia(1.5);
+    -webkit-filter: sepia(1.5);
+}
+
