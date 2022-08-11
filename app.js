@@ -8,7 +8,11 @@ const btnRotateLeft = d.querySelector('.rotate-left');
 const btnChoose = d.querySelector('.choose-img-btn');
 const btnSave = d.querySelector('.save-img-btn');
 let image = d.querySelector('#image');
+let val = 0;
 
+inputRange.addEventListener('input', (e) => {
+    val = e.target.value;
+} );
 
 d.addEventListener('click', (e) => {
     console.log(e.target.classList[2]);
@@ -39,10 +43,10 @@ d.addEventListener('click', (e) => {
                 image.style.filter = `sepia(${e.target.value}%)`;
             });
             break;
-            
     }
 
-});
+} );
+
 
 
 
